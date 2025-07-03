@@ -4,12 +4,9 @@ import * as React from "react";
 import Image from "next/image";
 import {
   IconX,
-  IconFileText,
-  IconWorld,
   IconArrowRight,
 } from "@tabler/icons-react";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 import { InputField } from "./InputField";
 
 interface GlobalSearchModalProps {

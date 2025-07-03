@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ApifyLogoProps extends React.SVGProps<SVGSVGElement> {}
+type ApifyLogoProps = React.SVGProps<SVGSVGElement>;
 
 export function ApifyLogo({ ...props }: ApifyLogoProps) {
   return (
