@@ -44,7 +44,7 @@ export function SearchStoreCta({}: SearchStoreCtaProps) {
               Try
             </span>
             <Image
-              src="/globe.svg"
+              src="/website-screenshot-generator.png"
               alt="Website Screenshot Generator"
               width={20}
               height={20}
@@ -67,7 +67,7 @@ export function SearchStoreCta({}: SearchStoreCtaProps) {
               Try
             </span>
             <Image
-              src="/window.svg"
+              src="/website-changes-detector.png"
               alt="Website Changes Detector"
               width={20}
               height={20}
