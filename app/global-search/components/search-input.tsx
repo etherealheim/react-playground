@@ -1,4 +1,5 @@
 import { IconSearch, IconCommand } from "@tabler/icons-react";
+import { Button } from "@/components/ui/button";
 
 interface SearchInputProps {
   onClick: () => void;
@@ -6,21 +7,19 @@ interface SearchInputProps {
 
 export function SearchInput({ onClick }: SearchInputProps) {
   return (
-    <button
+    <Button
+      variant="outline"
       onClick={onClick}
-      className="flex items-center gap-1 px-1 py-1.5 text-[13px] font-medium text-gray-600 dark:text-gray-400 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 w-[172px] h-7"
-      style={{ fontFamily: "Inter" }}
+      className="h-10 w-72 justify-between px-3 py-2 text-muted-foreground"
     >
-      <div className="flex items-center justify-center w-4 h-4 rounded">
-        <IconSearch className="w-4 h-4 text-gray-600 dark:text-gray-400" strokeWidth={2} />
+      <div className="flex items-center gap-2">
+        <IconSearch className="h-4 w-4" />
+        <span className="text-sm">Search...</span>
       </div>
-      <span className="flex-1 text-left">Search..</span>
-      <div className="flex items-center justify-center gap-0.5 px-1 py-0.5 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded min-w-5 h-5">
-        <IconCommand className="w-3.5 h-3.5 text-gray-600 dark:text-gray-400" strokeWidth={2} />
-        <span className="text-[12px] font-medium text-gray-600 dark:text-gray-400 leading-4" style={{ fontFamily: "var(--font-geist-mono)" }}>
-          K
-        </span>
-      </div>
-    </button>
+      <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+        <IconCommand className="h-3 w-3" />
+        K
+      </kbd>
+    </Button>
   );
 } 

@@ -24,6 +24,37 @@ This project is built with a modern, component-based architecture.
 - **Theming**: All components are designed to support both **light and dark modes** out of the box.
 - **Responsiveness**: The UI is built using a mobile-first approach to ensure a seamless experience across all screen sizes.
 
+### Color Palette
+
+The project uses a custom grayscale palette defined in `app/globals.css`. These colors are available as CSS variables.
+
+| Variable | Hex Value |
+|---|---|
+| `--color-gray-0` | `#ffffff` |
+| `--color-gray-25` | `#f8f9fc` |
+| `--color-gray-50` | `#f3f4fa` |
+| `--color-gray-75` | `#eef0f8` |
+| `--color-gray-100` | `#e0e3f2` |
+| `--color-gray-150` | `#d0d5e9` |
+| `--color-gray-200` | `#c0c6de` |
+| `--color-gray-250` | `#b0b8d1` |
+| `--color-gray-300` | `#a3abc5` |
+| `--color-gray-350` | `#969eb8` |
+| `--color-gray-400` | `#8a93ae` |
+| `--color-gray-450` | `#7b84a0` |
+| `--color-gray-500` | `#6c7590` |
+| `--color-gray-550` | `#626a85` |
+| `--color-gray-600` | `#555d76` |
+| `--color-gray-650` | `#4b526b` |
+| `--color-gray-700` | `#3f475d` |
+| `--color-gray-750` | `#31384d` |
+| `--color-gray-775` | `#2b3143` |
+| `--color-gray-800` | `#272d3e` |
+| `--color-gray-850` | `#242836` |
+| `--color-gray-875` | `#1d202a` |
+| `--color-gray-900` | `#191b22` |
+| `--color-gray-950` | `#0a0b0f` |
+
 ## Root Directory
 
 -   `app/`: Contains all the routes, pages, and layouts for the Next.js application, following the App Router paradigm.
@@ -41,8 +72,10 @@ This project is built with a modern, component-based architecture.
 -   `favicon.ico`: The application's favicon.
 -   `dropdown/`: A route demonstrating a dropdown component.
     -   `page.tsx`: The page for the `/dropdown` route.
+    -   `client-content.tsx`: Client-side content for the dropdown page.
 -   `global-search/`: A route demonstrating a global search feature.
     -   `page.tsx`: The page for the `/global-search` route.
+    -   `client-content.tsx`: Client-side content for the global search page.
     -   `components/`: Components specific to the global search feature.
         -   `global-search-modal.tsx`: Modal for the search interface.
         -   `search-header.tsx`: The header for the search modal.
@@ -57,6 +90,8 @@ This project is built with a modern, component-based architecture.
 -   `icons/`: A directory for SVG icon components.
 -   `ui/`: UI components, mostly from Shadcn UI.
     -   `badge.tsx`: A badge component.
+    -   `button.tsx`: A button component.
+    -   `dropdown-menu.tsx`: A dropdown menu component.
     -   `theme-provider.tsx`: Manages the application's theme (light/dark mode).
     -   `theme-toggle-button.tsx`: A button for switching themes.
 
