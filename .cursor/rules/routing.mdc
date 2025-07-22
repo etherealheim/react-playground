@@ -1,0 +1,13 @@
+# Routing
+
+This project uses the Next.js App Router.
+
+- Each folder inside `app/` represents a route segment.
+- `page.tsx` is the UI for a route segment.
+- `layout.tsx` is the UI that is shared across multiple pages.
+- Dynamic routes can be created by using folders with brackets, e.g., `app/users/[id]/page.tsx`.
+
+description:
+globs:
+alwaysApply: false
+---

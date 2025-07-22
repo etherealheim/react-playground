@@ -4,8 +4,8 @@ import * as React from "react";
 import { Grid } from "@/components/grid";
 import { ChevronLeftIcon } from "@/components/icons/chevron-left-icon";
 import Link from "next/link";
-import { GlobalSearchModal } from "./components/global-search-modal";
-import { SearchInput } from "./components/search-input";
+import { GlobalSearchModal } from "./components/GlobalSearchModal";
+import { SearchInput } from "./components/SearchInput";
 import { ThemeToggleButton } from '@/components/ui/theme-toggle-button';
 
 export default function ClientContent() {

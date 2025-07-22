@@ -1,0 +1,18 @@
+# Project Structure
+
+This is a Next.js project with the following structure:
+
+- `app/`: Contains the application's pages and routes.
+- `components/`: Contains reusable React components.
+- `components/ui/`: Contains UI components from shadcn/ui.
+- `lib/`: Contains utility functions.
+- `public/`: Contains static assets.
+- `next.config.ts`: Next.js configuration.
+- `tailwind.config.ts`: Tailwind CSS configuration.
+- `tsconfig.json`: TypeScript configuration.
+- `package.json`: Project dependencies and scripts.
+
+description:
+globs:
+alwaysApply: false
+---

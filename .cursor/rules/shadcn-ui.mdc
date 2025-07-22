@@ -1,0 +1,12 @@
+# shadcn/ui Components
+
+This project uses [shadcn/ui](https://ui.shadcn.com/) for UI components.
+
+- UI components are located in `components/ui/`.
+- To add a new component, use the shadcn/ui CLI: `npx shadcn-ui@latest add [component-name]`
+- The theme can be configured in `components/ui/theme-provider.tsx` and `components/ui/theme-toggle-button.tsx`.
+
+description:
+globs:
+alwaysApply: false
+---

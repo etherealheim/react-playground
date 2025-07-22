@@ -1,0 +1,7 @@
+This project uses Tabler Icons for iconography.
+
+When rapidly prototyping, we use components from shadcn/ui.
+
+Each page-specific feature, such as "dropdown" or "global search," has its own `components` folder within its respective `app/` directory (e.g., `app/dropdown/components/`). This is because we want to allow for both shared and customized components. Page-specific, customized components should be placed within these nested `components` folders.
+
+The `components/apify` directory is reserved for components related to the Apify service. 
