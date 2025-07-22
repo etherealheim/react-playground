@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import {
   CommandDialog,
-  CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
