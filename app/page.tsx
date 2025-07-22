@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from '@/components/grid';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { TopNavigation } from '@/components/top-navigation';
@@ -13,6 +12,10 @@ const links = [
     href: '/global-search',
     label: 'Global Search',
   },
+  {
+    href: '/layout',
+    label: 'Console',
+  },
 ];
 
 export default function Home() {
@@ -20,7 +23,6 @@ export default function Home() {
     <>
       <TopNavigation />
       <main className="relative flex h-screen items-center justify-center bg-background">
-        <Grid />
         <div
           className={cn(
             'relative z-10 flex flex-col items-center justify-center gap-1 text-xl font-[family-name:var(--font-geist-mono)]'

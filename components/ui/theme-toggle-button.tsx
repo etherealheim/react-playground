@@ -3,8 +3,8 @@
 import { useTheme } from 'next-themes';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { SunIcon } from '@/components/icons/sun-icon';
-import { MoonIcon } from '@/components/icons/moon-icon';
+import { SunIcon } from '@/components/animated-icons/sun-icon';
+import { MoonIcon } from '@/components/animated-icons/moon-icon';
 
 export function ThemeToggleButton() {
   const [mounted, setMounted] = useState(false);

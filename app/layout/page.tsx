@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
+import Link from "next/link"
 import {
   IconShoppingBag,
   IconHome,
@@ -26,7 +27,6 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarInput,
   SidebarInset,
@@ -38,9 +38,7 @@ import {
   SidebarMenuSubItem,
   SidebarProvider,
   SidebarRail,
-  SidebarSeparator,
   SidebarTrigger,
-  useSidebar,
 } from "@/components/ui/sidebar"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -325,7 +323,7 @@ function ApifySidebar() {
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <a href="/" aria-label="Go to homepage">
+              <Link href="/" aria-label="Go to homepage">
                 <svg width="60" height="18" viewBox="0 0 60 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.48656 0.728882H16.2916C16.43 0.728882 16.5422 0.841097 16.5422 0.979521V11.3792C16.5422 11.6283 16.2182 11.7249 16.0818 11.5165L9.27683 1.11676C9.16775 0.950061 9.28735 0.728882 9.48656 0.728882Z" fill="#246DFF"/>
                   <path d="M7.05565 0.728882H0.25064C0.112215 0.728882 0 0.841097 0 0.979521V11.3792C0 11.6283 0.323978 11.7249 0.460369 11.5165L7.26538 1.11676C7.37446 0.950061 7.25487 0.728882 7.05565 0.728882Z" fill="#20A34E"/>
@@ -336,7 +334,7 @@ function ApifySidebar() {
                   <path d="M43.5526 13.2609H41.482V5.07535H43.5526V13.2609Z" fill="#1F2123"/>
                   <path d="M43.585 3.76499H41.4334V1.30608H43.585V3.76499Z" fill="#1F2123"/>
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="flex items-center gap-1">
               <Button variant="ghost" size="icon" className="h-6 w-6 shrink-0 border border-border">
