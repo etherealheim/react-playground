@@ -54,6 +54,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { DataTable } from "@/components/ui/data-table"
 
 // Navigation data matching the Apify Console design
 const navMain = [
@@ -351,6 +352,7 @@ function ApifySidebar() {
 }
 
 export default function LayoutPage() {
+
   return (
     <SidebarProvider
       style={
@@ -388,7 +390,13 @@ export default function LayoutPage() {
                 </div>
               </div>
             </div>
-          </div>
+
+                      </div>
+        </div>
+
+        {/* Table Section - Stretched with 24px margins */}
+        <div className="px-6 pt-8">
+            <DataTable />
         </div>
 
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0 overflow-hidden">

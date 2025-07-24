@@ -164,3 +164,30 @@
     @apply bg-gray-100 dark:bg-gray-800;
   }
 }
+
+[data-resize-handle] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 7px;
+    cursor: col-resize;
+    z-index: 10;
+}
+
+[data-resize-handle]::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: hsl(var(--border));
+    position: absolute;
+    right: 3px;
+    top: 0;
+    transition: background-color 0.2s;
+}
+
+[data-resize-handle]:hover::after,
+[data-resize-handle].columns-resize-active::after {
+    background-color: hsl(var(--primary));
+}
