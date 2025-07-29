@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu"
+import { TableButton } from "@/components/ui/table-button"
 import {
   Table,
   TableBody,
@@ -318,13 +319,6 @@ export function DataTable() {
     setOpenDropdown(null)
   }
 
-  const getButtonClassName = (field: string) => {
-    const baseClasses = "flex items-center hover:bg-muted/50 hover:text-foreground border border-transparent hover:border-border px-2 py-1 rounded-md transition-colors outline-none focus:outline-none"
-    const activeClasses = "bg-gray-50 dark:!bg-gray-700 !border-gray-200 dark:!border-gray-600"
-    
-    return openDropdown === field ? `${baseClasses} ${activeClasses}` : baseClasses
-  }
-
   const sortKey = `${sortField}-${sortDirection}`;
 
   return (
@@ -357,10 +351,10 @@ export function DataTable() {
                     >
                         <DropdownMenu onOpenChange={(open) => setOpenDropdown(open ? col : null)}>
                         <DropdownMenuTrigger asChild>
-                            <button className={getButtonClassName(col)}>
+                            <TableButton isActive={openDropdown === col}>
                                 <span className="truncate">{columnDisplayNames[col]}</span>
                                 {getSortIcon(col)}
-                            </button>
+                            </TableButton>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="start">
                             <DropdownMenuItem onClick={() => handleSortOption(col, 'asc')}>
