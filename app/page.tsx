@@ -16,6 +16,10 @@ const links = [
     href: '/layout',
     label: 'Console',
   },
+  {
+    href: '/tabs-lock',
+    label: 'Tabs lock',
+  },
 ];
 
 export default function Home() {
